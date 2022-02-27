@@ -10,6 +10,7 @@ def main():
     """A simple scrapper for get the css structure of a website"""
     pass
 
+
 @main.command()
 @click.option('-u', '--url', 'website', required=True)
 @click.option('--show-output', 'show_output', is_flag=True)
@@ -17,6 +18,7 @@ def main():
 @click.option('--output', 'output', required=False, default="results.sass")
 def scrap(website, show_output, element, output):
     scrapping(website, show_output, element, output)
+
 
 if __name__ == '__main__':
     args = sys.argv

@@ -117,19 +117,19 @@ def show_classes(class_name, content_html):
     else:
         element = class_name
 
-    childs = []
-    childs.extend([c for c in element.contents if c.name != None])
+    children = []
+    children.extend([c for c in element.contents if c.name != None])
 
-    for x in range(len(childs)):
+    for x in range(len(children)):
 
         get_tabs(counter)
 
-        get_names(childs[x])
+        get_names(children[x])
 
         temp = counter
 
-        if len(clear_contents(childs[x])) > 0:
+        if len(clear_contents(children[x])) > 0:
             counter = counter + 1
-            show_classes(childs[x], content_html)
+            show_classes(children[x], content_html)
 
         counter = temp

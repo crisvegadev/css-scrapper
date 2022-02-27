@@ -35,9 +35,7 @@ setup(
     long_description_content_type="text/markdown",
     license='MIT',
     url='https://github.com/crisvegadev/css-scrapper',
-    download_url='https://github.com/crisvegadev/css-scrapper/archive/1.0.0.tar.gz',
     dependency_links=dependency_links,
-    author_email='contact@crisvega.dev',
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 2.7",
